@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Element-Example</title>
+    <style>
+        .styled-button{
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .styled-button:hover{
+            background-color: lightblue;
+        }
+        .styled-button:focus{
+            outline: none;
+            background-color: purple;
+        }
+        .styled-button:active{
+            background-color: orange;
+        }
+        li{
+            font-size: 16px;
+            color: black;
+        }
+        li:nth-child(even){
+            background-color: whitesmoke;
+        }
+        li:nth-child(3n){
+            color: black;
+        }
+        h1::before{
+            content: "⭐🤣";
+            color: gold;
+        }
+        h1::after{
+            content: "⭐";
+            color: gold;
+        }
+        p::first-letter{
+            font-size: 3cm;
+            color: green;
+            font-weight: bold;
+        }
+        ::selection{
+            background-color: yellow;
+            color: black;
+        }
+        h1{
+            border: 5px solid red;
+            box-shadow: inset 5px 5px 10px 1px blue;
+            text-shadow: ;
+        }
+    </style>
+</head>
+<body>
+    <a href="" class="styled-button">Example</a>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ul>
+    <h1>Welcome to the site</h1>
+    <p>dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.<br>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+</body>
+</html>
